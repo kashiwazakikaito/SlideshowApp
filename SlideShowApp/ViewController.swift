@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        view.backgroundColor = UIColor.black
         firstImage.image = imageRow[nowIndex]
         
     }
@@ -63,8 +64,7 @@ class ViewController: UIViewController {
     @IBAction func playButtom(_ sender: Any) {
         
         if timer == nil {
-            view.backgroundColor = UIColor.darkGray
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(nextButtom(_:)), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(nextButtom(_:)), userInfo: nil, repeats: true)
             
             let play = UIImage(named: "stop-fill")
             
@@ -75,7 +75,6 @@ class ViewController: UIViewController {
             nextImage.isHidden = true
             
         } else {
-            view.backgroundColor = UIColor.white
             timer.invalidate()
             timer = nil
             
