@@ -13,6 +13,7 @@
 		9599CCEA28B3993F00CFCC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9599CCE828B3993F00CFCC90 /* Main.storyboard */; };
 		9599CCEC28B3994000CFCC90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9599CCEB28B3994000CFCC90 /* Assets.xcassets */; };
 		9599CCEF28B3994000CFCC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9599CCED28B3994000CFCC90 /* LaunchScreen.storyboard */; };
+		9599CCF728B39A6300CFCC90 /* CloseUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9599CCF628B39A6300CFCC90 /* CloseUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9599CCEB28B3994000CFCC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9599CCEE28B3994000CFCC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9599CCF028B3994000CFCC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9599CCF628B39A6300CFCC90 /* CloseUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9599CCE228B3993F00CFCC90 /* AppDelegate.swift */,
 				9599CCE428B3993F00CFCC90 /* SceneDelegate.swift */,
 				9599CCE628B3993F00CFCC90 /* ViewController.swift */,
+				9599CCF628B39A6300CFCC90 /* CloseUpViewController.swift */,
 				9599CCE828B3993F00CFCC90 /* Main.storyboard */,
 				9599CCEB28B3994000CFCC90 /* Assets.xcassets */,
 				9599CCED28B3994000CFCC90 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9599CCF728B39A6300CFCC90 /* CloseUpViewController.swift in Sources */,
 				9599CCE728B3993F00CFCC90 /* ViewController.swift in Sources */,
 				9599CCE328B3993F00CFCC90 /* AppDelegate.swift in Sources */,
 				9599CCE528B3993F00CFCC90 /* SceneDelegate.swift in Sources */,
