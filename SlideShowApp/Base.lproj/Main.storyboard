@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbO-8B-6kX" userLabel="back">
-                                <rect key="frame" x="35" y="716" width="96" height="96"/>
+                                <rect key="frame" x="35" y="766" width="96" height="96"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="skip-back-fill"/>
                                 <connections>
@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ4-lP-BHC" userLabel="play">
-                                <rect key="frame" x="159" y="716" width="96" height="96"/>
+                                <rect key="frame" x="159" y="766" width="96" height="96"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="play-fill"/>
                                 <state key="selected" image="stop-fill"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pB-qW-I6R" userLabel="next">
-                                <rect key="frame" x="283" y="716" width="96" height="96"/>
+                                <rect key="frame" x="283" y="766" width="96" height="96"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="skip-forward-fill"/>
                                 <connections>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pmH-M7-kSt">
-                                <rect key="frame" x="10" y="94" width="394" height="572"/>
+                                <rect key="frame" x="5" y="54" width="404" height="702"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cjS-27-Oy0" appends="YES" id="dNA-aV-qwF"/>
@@ -54,13 +54,13 @@
                         <constraints>
                             <constraint firstItem="hJ4-lP-BHC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Do-cb-0bg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1pB-qW-I6R" secondAttribute="trailing" constant="35" id="4uH-5j-A0U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pmH-M7-kSt" secondAttribute="trailing" constant="10" id="9pf-zr-11I"/>
-                            <constraint firstItem="pmH-M7-kSt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="DP3-bR-WpY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pmH-M7-kSt" secondAttribute="trailing" constant="5" id="9pf-zr-11I"/>
+                            <constraint firstItem="pmH-M7-kSt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="DP3-bR-WpY"/>
                             <constraint firstItem="gbO-8B-6kX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="KkZ-vQ-EcT"/>
-                            <constraint firstItem="pmH-M7-kSt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Nqy-Qx-UfO"/>
-                            <constraint firstItem="gbO-8B-6kX" firstAttribute="top" secondItem="pmH-M7-kSt" secondAttribute="bottom" constant="50" id="QLz-8H-ten"/>
+                            <constraint firstItem="pmH-M7-kSt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Nqy-Qx-UfO"/>
+                            <constraint firstItem="gbO-8B-6kX" firstAttribute="top" secondItem="pmH-M7-kSt" secondAttribute="bottom" constant="10" id="QLz-8H-ten"/>
                             <constraint firstItem="hJ4-lP-BHC" firstAttribute="top" secondItem="gbO-8B-6kX" secondAttribute="top" id="Xkt-9d-ASw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gbO-8B-6kX" secondAttribute="bottom" constant="50" id="lQ9-uB-YmG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gbO-8B-6kX" secondAttribute="bottom" id="lQ9-uB-YmG"/>
                             <constraint firstItem="1pB-qW-I6R" firstAttribute="top" secondItem="gbO-8B-6kX" secondAttribute="top" id="sfT-zz-lY8"/>
                         </constraints>
                     </view>
@@ -75,7 +75,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="cjS-27-Oy0">
                     <connections>
-                        <action selector="tapImage:" destination="BYZ-38-t0r" id="UP4-8F-b2h"/>
                         <segue destination="DTa-UP-ugy" kind="show" id="5KO-Dq-A3y"/>
                     </connections>
                 </tapGestureRecognizer>
@@ -85,8 +84,6 @@
         <!--Close Up View Controller-->
         <scene sceneID="y3j-qe-aK3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KMb-7X-MwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="S3l-Cm-POy" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController storyboardIdentifier="CloseUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTa-UP-ugy" customClass="CloseUpViewController" customModule="SlideShowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ooA-qD-nqQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -128,6 +125,8 @@
                         <outlet property="closeUpImage" destination="R8Q-b8-SER" id="OZX-xS-ygr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMb-7X-MwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="S3l-Cm-POy" userLabel="Exit" sceneMemberID="exit"/>
                 <pinchGestureRecognizer id="IKd-Bp-RaW">
                     <connections>
                         <action selector="pinch:" destination="DTa-UP-ugy" id="bql-o8-gea"/>

@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     var nowIndex:Int = 0
     
-    var timer:Timer!
+    var timer:Timer! // なぜ！をつけているのか
     
-    var imageBox:UIImage!
+    var imageBox:UIImage! // 同上
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +70,6 @@ class ViewController: UIViewController {
             
             playImage.setImage(play, for: .normal)
             
-            tapImage.isEnabled = false
             backImage.isHidden = true
             nextImage.isHidden = true
             
@@ -93,7 +92,22 @@ class ViewController: UIViewController {
         
         let sentImage: UIImage = firstImage.image!
         closeUpViewController.secondImage = sentImage
+        
+        // timer?.invalidate() timerがnilの場合は勝手に作動しない
+        
+        if timer != nil {
+            timer.invalidate()
+            timer = nil
+            
+            let stopImage = UIImage(named: "play-fill")
+            playImage.setImage(stopImage, for: .normal)
+            
+            tapImage.isEnabled = true
+            backImage.isHidden = false
+            nextImage.isHidden = false
+        }
     }
+    
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
